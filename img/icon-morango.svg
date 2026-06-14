@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t">
+  <title id="t">Morango</title>
+  <path d="M32 58C19 45 13 35 15 26c2-8 9-12 17-8 8-4 15 0 17 8 2 9-4 19-17 32z" fill="#D81B60"/>
+  <path d="M32 19l-5-10 5 5 5-5-5 10zM25 20l-9-5M39 20l9-5" stroke="#2F9E44" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="26" cy="31" r="2" fill="#FFF8DF"/><circle cx="36" cy="33" r="2" fill="#FFF8DF"/><circle cx="31" cy="43" r="2" fill="#FFF8DF"/>
+</svg>

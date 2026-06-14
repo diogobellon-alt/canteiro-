@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t">
+  <title id="t">Cebolinha</title>
+  <path d="M18 56c3-18 5-34 4-48M31 56c2-20 2-34 1-50M45 56c-3-18-5-34-3-48" fill="none" stroke="#43A047" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="32" cy="56" rx="20" ry="5" fill="#8D6E63"/>
+</svg>

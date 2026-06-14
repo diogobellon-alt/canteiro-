@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteiro² | Planeje melhor, plante com consciência</title>
+    <meta name="description" content="Simulador educativo para planejar hortas e canteiros por metro quadrado no Concurso Agrinho 2026.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="marca" href="#inicio" aria-label="Voltar ao início do Canteiro²">
+            <img src="img/logo-canteiro2.svg" alt="Logo Canteiro²" width="48" height="48">
+            <span>Canteiro²</span>
+        </a>
+
+        <nav class="menu" aria-label="Menu principal">
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#planejador">Planejador</a>
+            <a href="#comparacao">Comparação</a>
+            <a href="#sustentabilidade">Dicas</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-conteudo">
+                <p class="etiqueta">Concurso Agrinho 2026</p>
+                <h1>Canteiro²</h1>
+                <p class="slogan">Planeje melhor, plante com consciência.</p>
+                <p class="hero-texto">Um simulador educativo para planejar hortas e canteiros por metro quadrado, estimando culturas, espaçamentos e distribuição do plantio.</p>
+                <a class="botao botao-primario" href="#planejador">Planejar meu canteiro</a>
+            </div>
+
+            <div class="hero-visual" aria-label="Ilustração do projeto Canteiro²">
+                <img src="img/logo-canteiro2.svg" alt="Símbolo do Canteiro² com canteiro, planta e tecnologia" width="260" height="260">
+                <div class="mini-indicadores" aria-label="Indicadores educativos do projeto">
+                    <span><img src="img/icon-area.svg" alt="" width="24" height="24"> área</span>
+                    <span><img src="img/icon-planta.svg" alt="" width="24" height="24"> plantio</span>
+                    <span><img src="img/icon-agua.svg" alt="" width="24" height="24"> água</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao" id="como-funciona">
+            <div class="secao-cabecalho">
+                <p class="etiqueta">Como funciona</p>
+                <h2>Planejamento simples para usar melhor cada metro quadrado</h2>
+            </div>
+
+            <div class="cards-grid tres-colunas">
+                <article class="card">
+                    <img src="img/icon-area.svg" alt="" width="54" height="54">
+                    <h3>Calcule a área</h3>
+                    <p>Informe largura e comprimento do espaço para descobrir a área disponível em metros quadrados.</p>
+                </article>
+                <article class="card">
+                    <img src="img/icon-planta.svg" alt="" width="54" height="54">
+                    <h3>Escolha as culturas</h3>
+                    <p>Selecione uma ou mais culturas e veja estimativas de quantidade de plantas com base no espaçamento.</p>
+                </article>
+                <article class="card">
+                    <img src="img/icon-horta.svg" alt="" width="54" height="54">
+                    <h3>Visualize o canteiro</h3>
+                    <p>Acompanhe uma grade educativa com cores e ícones para entender a distribuição do plantio.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao planejador" id="planejador">
+            <div class="secao-cabecalho">
+                <p class="etiqueta">Simulador</p>
+                <h2>Calculadora de área e combinação de plantios</h2>
+                <p>Preencha os dados do espaço, escolha até três culturas e gere uma estimativa educativa para o canteiro.</p>
+            </div>
+
+            <div class="painel-grid">
+                <form class="formulario" id="form-planejamento">
+                    <fieldset>
+                        <legend>Dados do espaço</legend>
+
+                        <div class="campo-duplo">
+                            <div class="campo">
+                                <label for="largura">Largura do espaço em metros</label>
+                                <input id="largura" name="largura" type="number" min="0.1" step="0.1" value="2" required>
+                            </div>
+
+                            <div class="campo">
+                                <label for="comprimento">Comprimento do espaço em metros</label>
+                                <input id="comprimento" name="comprimento" type="number" min="0.1" step="0.1" value="3" required>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <label for="tipo-espaco">Tipo de espaço</label>
+                            <select id="tipo-espaco" name="tipo-espaco">
+                                <option value="horta caseira">Horta caseira</option>
+                                <option value="canteiro escolar">Canteiro escolar</option>
+                                <option value="quintal">Quintal</option>
+                                <option value="pequena produção">Pequena produção</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="condicao-sol">Condição de sol</label>
+                            <select id="condicao-sol" name="condicao-sol">
+                                <option value="sol pleno">Sol pleno</option>
+                                <option value="meia sombra">Meia sombra</option>
+                                <option value="pouca luz">Pouca luz</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="disponibilidade-agua">Disponibilidade de água</label>
+                            <select id="disponibilidade-agua" name="disponibilidade-agua">
+                                <option value="baixa">Baixa</option>
+                                <option value="média">Média</option>
+                                <option value="alta">Alta</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Combinação de plantios</legend>
+
+                        <div class="campo">
+                            <label for="cultura-principal">Cultura principal</label>
+                            <select id="cultura-principal" name="cultura-principal"></select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="cultura-secundaria">Cultura secundária</label>
+                            <select id="cultura-secundaria" name="cultura-secundaria"></select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="cultura-complementar">Cultura complementar</label>
+                            <select id="cultura-complementar" name="cultura-complementar"></select>
+                        </div>
+
+                        <p class="texto-ajuda">A fórmula educativa usada é: área da cultura = área total x percentual; plantas = área da cultura / (espaçamento x espaçamento).</p>
+                    </fieldset>
+
+                    <div class="acoes">
+                        <button class="botao botao-primario" type="submit">Calcular planejamento</button>
+                        <button class="botao botao-secundario" type="button" id="botao-limpar">Limpar</button>
+                        <button class="botao botao-secundario" type="button" id="botao-salvar">Salvar</button>
+                    </div>
+                </form>
+
+                <aside class="resultado" aria-live="polite">
+                    <div class="mensagem" id="mensagem">Preencha os dados e calcule o planejamento do canteiro.</div>
+
+                    <div class="resultado-resumo">
+                        <h3>Resultado do planejamento</h3>
+                        <dl>
+                            <div>
+                                <dt>Área total</dt>
+                                <dd id="resultado-area">0 m²</dd>
+                            </div>
+                            <div>
+                                <dt>Formato</dt>
+                                <dd id="resultado-formato">-</dd>
+                            </div>
+                            <div>
+                                <dt>Uso recomendado</dt>
+                                <dd id="resultado-recomendacao">-</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <div class="resultado-lista" id="resultado-culturas"></div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="secao grade-secao" id="grade">
+            <div class="secao-cabecalho">
+                <p class="etiqueta">Grade do canteiro</p>
+                <h2>Distribuição visual do plantio</h2>
+            </div>
+
+            <div class="grade-wrapper">
+                <div class="grade-cultivo quadrado" id="grade-cultivo" aria-label="Grade visual do canteiro"></div>
+            </div>
+
+            <p class="aviso-grade" id="aviso-grade" hidden>Exibição reduzida para facilitar a visualização. A quantidade total estimada aparece nos resultados.</p>
+
+            <div class="legenda" id="legenda-culturas" aria-label="Legenda das culturas selecionadas"></div>
+
+            <article class="explicacao-grade">
+                <h3>Como a distribuição foi organizada</h3>
+                <p id="explicacao-grade">A grade representa uma simulação visual do canteiro informado. Quando há mais de uma cultura, o espaço é dividido em partes aproximadas entre os plantios selecionados. Cada cor e ícone representa uma cultura diferente. A quantidade total é calculada pelo espaçamento médio de cada planta.</p>
+                <p class="aviso">Essa distribuição é educativa e serve como ponto de partida. No plantio real, a posição das culturas pode mudar conforme sol, irrigação, tipo de solo, época do ano e orientação técnica.</p>
+            </article>
+        </section>
+
+        <section class="secao" id="comparacao">
+            <div class="secao-cabecalho">
+                <p class="etiqueta">Comparação de culturas</p>
+                <h2>Veja como diferentes culturas ocupam o mesmo espaço</h2>
+            </div>
+
+            <div class="tabela-responsiva">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cultura</th>
+                            <th>Espaçamento</th>
+                            <th>Plantas no espaço</th>
+                            <th>Ciclo</th>
+                            <th>Sol recomendado</th>
+                            <th>Dica curta</th>
+                        </tr>
+                    </thead>
+                    <tbody id="comparacao-corpo"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="secao" id="sustentabilidade">
+            <div class="secao-cabecalho">
+                <p class="etiqueta">Dicas sustentáveis</p>
+                <h2>Produzir melhor também é cuidar do ambiente</h2>
+            </div>
+
+            <div class="cards-grid quatro-colunas">
+                <article class="card dica"><img src="img/icon-area.svg" alt="" width="42" height="42"><h3>Respeite o espaçamento</h3><p>Plantas bem distribuídas competem menos por luz, água e nutrientes.</p></article>
+                <article class="card dica"><img src="img/icon-sustentabilidade.svg" alt="" width="42" height="42"><h3>Use compostagem</h3><p>Restos orgânicos podem virar adubo e melhorar a saúde do solo.</p></article>
+                <article class="card dica"><img src="img/icon-agua.svg" alt="" width="42" height="42"><h3>Economize água</h3><p>Irrigue nos horários mais frescos e observe a umidade antes de regar.</p></article>
+                <article class="card dica"><img src="img/icon-horta.svg" alt="" width="42" height="42"><h3>Faça rotação</h3><p>Alternar culturas ajuda a reduzir desgaste do solo e problemas de manejo.</p></article>
+                <article class="card dica"><img src="img/icon-planta.svg" alt="" width="42" height="42"><h3>Evite desperdício</h3><p>Planejar a quantidade reduz perda de mudas, sementes e insumos.</p></article>
+                <article class="card dica"><img src="img/icon-sol.svg" alt="" width="42" height="42"><h3>Observe o solo</h3><p>Cor, textura e drenagem indicam cuidados antes do plantio.</p></article>
+                <article class="card dica"><img src="img/icon-cebolinha.svg" alt="" width="42" height="42"><h3>Diversifique</h3><p>Um canteiro variado melhora o aprendizado e distribui melhor os riscos.</p></article>
+                <article class="card dica"><img src="img/icon-mandioca.svg" alt="" width="42" height="42"><h3>Proteja a superfície</h3><p>Cobertura orgânica conserva umidade e reduz erosão em pequenas áreas.</p></article>
+            </div>
+        </section>
+
+        <section class="secao sobre" id="sobre">
+            <div class="sobre-grid">
+                <div>
+                    <p class="etiqueta">Sobre o projeto</p>
+                    <h2>Canteiro² no Agrinho 2026</h2>
+                    <p>O Canteiro² é um simulador educativo de planejamento de canteiros por metro quadrado. Ele ajuda estudantes, famílias, escolas e pequenos produtores a calcular a área de um canteiro, escolher culturas alimentícias, estimar quantas plantas cabem no espaço e visualizar uma distribuição inicial do plantio.</p>
+                    <p>O projeto dialoga com o tema “Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente” ao mostrar que produzir bem também envolve planejamento, cuidado com recursos naturais, diversidade de culturas e respeito ao espaço disponível.</p>
+                </div>
+                <div class="avisos-educativos">
+                    <h3>Avisos educativos</h3>
+                    <p>As informações apresentadas são estimativas educativas. O plantio real pode variar conforme clima, solo, irrigação, adubação, época do ano e orientação técnica.</p>
+                    <p>A combinação de culturas é uma simulação inicial. Na prática, algumas plantas se desenvolvem melhor juntas e outras podem competir por luz, água e nutrientes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <div>
+                <strong>Canteiro²</strong>
+                <p>Projeto desenvolvido para o Concurso Agrinho 2026.</p>
+                <p>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente.</p>
+            </div>
+            <dl class="rodape-autoria">
+                <div>
+                    <dt>Estudante</dt>
+                    <dd>Diogo Guedes Bellon</dd>
+                </div>
+                <div>
+                    <dt>Professor orientador</dt>
+                    <dd>Henrique S. Lima</dd>
+                </div>
+                <div>
+                    <dt>Escola</dt>
+                    <dd>Colégio Estadual do Campo Antônio Paulo Lopes</dd>
+                </div>
+            </dl>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

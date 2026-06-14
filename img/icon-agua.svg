@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t">
+  <title id="t">Água</title>
+  <path d="M32 6C22 19 14 31 14 41c0 10 8 17 18 17s18-7 18-17C50 31 42 19 32 6z" fill="#2F9E44"/>
+  <path d="M24 43c1 5 5 8 10 8" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+</svg>

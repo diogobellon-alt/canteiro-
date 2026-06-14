@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t">
+  <title id="t">Cenoura</title>
+  <path d="M30 18c7 4 12 9 15 15L29 59 15 31c3-6 8-10 15-13z" fill="#F28C28"/>
+  <path d="M28 20c-4-8-2-13 6-15 1 7-1 12-6 15zM33 20c2-8 7-12 15-11-2 7-7 11-15 11z" fill="#2F9E44"/>
+  <path d="M22 34l12 4M25 44l7 3" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+</svg>

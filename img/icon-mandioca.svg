@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t">
+  <title id="t">Mandioca</title>
+  <path d="M30 20l-8 35c8 3 16 3 24-1L35 20z" fill="#A1887F"/>
+  <path d="M31 20C20 18 13 12 10 5c10 0 18 4 23 13M35 20C42 11 49 8 57 9c-3 8-9 13-20 14" fill="#2F9E44"/>
+  <path d="M28 31h10M26 42h13" stroke="#FFF8DF" stroke-width="3" stroke-linecap="round"/>
+</svg>

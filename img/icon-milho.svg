@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t">
+  <title id="t">Milho</title>
+  <path d="M32 8c10 8 14 19 10 33-2 7-6 12-10 16-4-4-8-9-10-16-4-14 0-25 10-33z" fill="#F4B400"/>
+  <path d="M23 42C12 34 10 22 15 10c10 9 14 21 11 36M41 42c11-8 13-20 8-32-10 9-14 21-11 36" fill="#2F9E44"/>
+  <path d="M27 24h10M26 33h12M28 42h8" stroke="#FFF8DF" stroke-width="3" stroke-linecap="round"/>
+</svg>

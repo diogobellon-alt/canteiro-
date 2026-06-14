@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t">
+  <title id="t">Couve</title>
+  <path d="M32 58V20" stroke="#1B5E20" stroke-width="5" stroke-linecap="round"/>
+  <path d="M32 24C17 15 8 20 7 33c11 6 21 3 25-9zM32 24c15-9 24-4 25 9-11 6-21 3-25-9zM32 40c-13-7-22-3-24 8 10 6 19 4 24-8zM32 40c13-7 22-3 24 8-10 6-19 4-24-8z" fill="#2E7D32"/>
+</svg>
